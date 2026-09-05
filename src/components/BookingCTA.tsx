@@ -2,10 +2,12 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Phone, Mail, MapPin } from 'lucide-react'
+import { useBooking } from '../context/BookingContext'
 
 export default function BookingCTA() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const { openBooking } = useBooking()
 
   return (
     <section id="contact" className="relative overflow-hidden" ref={ref}>
@@ -54,14 +56,12 @@ export default function BookingCTA() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4"
             >
-              <a
-                href="https://wa.me/917373605380?text=Hi! I'm interested in booking a photography session with Candy Capture Photography."
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={openBooking}
                 className="w-full sm:w-auto px-8 py-3.5 bg-candy-pink text-white font-medium text-sm tracking-wide hover:bg-candy-pink/90 transition-all duration-300 text-center"
               >
                 Book Your Shoot
-              </a>
+              </button>
               <a
                 href="mailto:hellocandycapturephotography@gmail.com"
                 className="w-full sm:w-auto px-8 py-3.5 border-2 border-white text-white font-medium text-sm tracking-wide hover:bg-white hover:text-neutral-900 transition-all duration-300 text-center"

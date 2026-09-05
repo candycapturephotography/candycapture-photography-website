@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import { useBooking } from '../context/BookingContext'
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -13,6 +14,7 @@ const navLinks = [
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const { openBooking } = useBooking()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,6 +41,11 @@ export default function Navigation() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
+  }
+
+  const handleBookNowClick = () => {
+    setIsOpen(false)
+    openBooking()
   }
 
   return (
@@ -85,10 +92,8 @@ export default function Navigation() {
             </ul>
 
             {/* Book Now Button - Desktop */}
-            <a
-              href="https://wa.me/917373605380?text=Hi! I'm interested in booking a photography session."
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={handleBookNowClick}
               className={`hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium tracking-wide transition-all duration-300 ${
                 isScrolled
                   ? 'bg-neutral-900 text-white hover:bg-neutral-800'
@@ -96,7 +101,7 @@ export default function Navigation() {
               }`}
             >
               Book Now
-            </a>
+            </button>
 
             {/* Mobile Menu Button */}
             <button
@@ -150,17 +155,15 @@ export default function Navigation() {
                   </motion.li>
                 ))}
               </ul>
-              <motion.a
+              <motion.button
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.35 }}
-                href="https://wa.me/917373605380?text=Hi! I'm interested in booking a photography session."
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={handleBookNowClick}
                 className="mt-8 px-8 py-3 bg-candy-pink text-white text-base font-medium tracking-wide hover:bg-candy-pink/90 transition-colors duration-300"
               >
                 Book Your Session
-              </motion.a>
+              </motion.button>
             </motion.nav>
           </motion.div>
         )}

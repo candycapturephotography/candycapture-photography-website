@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
+import { useBooking } from '../context/BookingContext'
 
 export default function Hero() {
+  const { openBooking } = useBooking()
+
   const scrollToAbout = () => {
     const element = document.querySelector('#about')
     if (element) {
@@ -71,14 +74,12 @@ export default function Hero() {
           >
             View Our Work
           </a>
-          <a
-            href="https://wa.me/917373605380?text=Hi! I'm interested in booking a photography session."
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={openBooking}
             className="w-full sm:w-auto px-8 py-3 border-2 border-white text-white font-medium text-sm tracking-wide hover:bg-white hover:text-neutral-900 transition-all duration-300 text-center"
           >
             Book a Session
-          </a>
+          </button>
         </motion.div>
 
         {/* Scroll Indicator */}
