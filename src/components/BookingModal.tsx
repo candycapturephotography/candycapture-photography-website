@@ -104,7 +104,7 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          access_key: '0496725a-d40b-435f-9c78-07444cbb6e8a', // Get free key from web3forms.com
+          access_key: '2b3cd7f9-5495-41ba-9a59-99f9955bd0c4',
           subject: `🎉 New Booking Enquiry - ${formData.eventType}`,
           from_name: 'Candy Capture Photography Website',
           to_email: 'hellocandycapturephotography@gmail.com',
@@ -128,23 +128,6 @@ Please contact the customer soon!
       const result = await response.json()
 
       if (result.success) {
-        // Also send WhatsApp notification via CallMeBot (FREE)
-        // This sends a WhatsApp message to your number automatically
-        try {
-          const whatsappMessage = encodeURIComponent(
-            `🎉 *New Booking!*\n\n👤 ${formData.name}\n📱 ${formData.mobile}\n🎊 ${formData.eventType}\n📅 ${formattedDate}`
-          )
-          // CallMeBot WhatsApp API (FREE) - You need to activate once
-          // Visit: https://www.callmebot.com/blog/free-api-whatsapp-messages/
-          await fetch(
-            `https://api.callmebot.com/whatsapp.php?phone=917373605380&text=${whatsappMessage}&apikey=YOUR_API_KEY`,
-            { mode: 'no-cors' }
-          )
-        } catch {
-          // WhatsApp notification failed silently, but email was sent
-          console.log('WhatsApp notification skipped')
-        }
-
         setIsSuccess(true)
       } else {
         throw new Error('Form submission failed')
