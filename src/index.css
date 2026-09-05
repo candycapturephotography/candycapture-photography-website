@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-body text-neutral-800 bg-cream;
+    font-feature-settings: 'kern' 1;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::selection {
+    @apply bg-candy-pink/20 text-neutral-900;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-neutral-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-400 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-500;
+  }
+}
+
+@layer components {
+  /* Typography */
+  .text-gradient {
+    @apply bg-gradient-candy bg-clip-text text-transparent;
+  }
+
+  .heading-display {
+    @apply font-display font-semibold tracking-tight;
+  }
+
+  .heading-script {
+    @apply font-script font-medium;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 font-medium text-sm tracking-wide transition-all duration-300 rounded-none;
+  }
+
+  .btn-primary {
+    @apply btn bg-neutral-900 text-white hover:bg-neutral-800 active:bg-neutral-950;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white;
+  }
+
+  .btn-ghost {
+    @apply btn text-neutral-900 hover:bg-neutral-100;
+  }
+
+  .btn-candy {
+    @apply btn bg-candy-pink text-white hover:bg-candy-pink/90;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white overflow-hidden;
+  }
+
+  .card-elevated {
+    @apply card shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+
+  /* Image containers */
+  .image-container {
+    @apply relative overflow-hidden;
+  }
+
+  .image-container img {
+    @apply w-full h-full object-cover transition-transform duration-700;
+  }
+
+  .image-container:hover img {
+    @apply scale-105;
+  }
+
+  /* Section styles - REDUCED SPACING */
+  .section {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .section-lg {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-wide {
+    @apply max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Decorative elements */
+  .line-decoration {
+    @apply w-16 h-0.5 bg-candy-pink;
+  }
+
+  .line-decoration-sm {
+    @apply w-10 h-px bg-neutral-300;
+  }
+
+  /* Overlay styles */
+  .overlay-dark {
+    @apply absolute inset-0 bg-black/40;
+  }
+
+  .overlay-gradient {
+    @apply absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent;
+  }
+}
+
+@layer utilities {
+  /* Animation delays */
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  /* Custom aspect ratios */
+  .aspect-portrait {
+    aspect-ratio: 3/4;
+  }
+
+  .aspect-cinema {
+    aspect-ratio: 21/9;
+  }
+
+  /* Text balance for headings */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Smooth image loading */
+  .img-loading {
+    @apply bg-neutral-200 animate-pulse;
+  }
+
+  /* Letter spacing utilities */
+  .tracking-premium {
+    letter-spacing: 0.2em;
+  }
+}
+
+/* Framer Motion optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Hide scrollbar for horizontal scroll galleries */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 640px) {
+  .container-custom,
+  .container-wide {
+    @apply px-4;
+  }
+  
+  h1, h2, h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
