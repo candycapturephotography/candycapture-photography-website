@@ -1,0 +1,185 @@
+================================================================================
+           CANDY CAPTURE PHOTOGRAPHY - WEBSITE INFORMATION
+================================================================================
+
+Created: September 5, 2026
+Status: LIVE ✓
+
+================================================================================
+                           LIVE WEBSITE URL
+================================================================================
+
+Website:        https://candycapturephotography.in
+Backup URL:     https://candycapture-photography-website.hellocandycapturephotography.workers.dev
+
+================================================================================
+                           BUSINESS DETAILS
+================================================================================
+
+Business Name:  Candy Capture Photography
+Phone/WhatsApp: 7373605380
+Email:          hellocandycapturephotography@gmail.com
+Instagram:      https://www.instagram.com/candycapture_/
+Address:        189/10 Bathrakaliamman Temple Opposite, Sivakasi 626123
+
+================================================================================
+                      PLATFORMS & ACCOUNTS USED
+================================================================================
+
+1. CLOUDFLARE PAGES (Website Hosting)
+   ─────────────────────────────────────
+   URL:          https://dash.cloudflare.com
+   Login Email:  hellocandycapturephotography@gmail.com
+   Plan:         FREE
+   Purpose:      Hosts the website, provides SSL certificate, CDN
+   Cost:         ₹0 (FREE)
+
+2. GITHUB (Code Storage)
+   ─────────────────────────────────────
+   URL:          https://github.com
+   Repository:   https://github.com/candycapturephotography/candycapture-photography-website
+   Login:        candycapturephotography
+   Purpose:      Stores website code, auto-deploys to Cloudflare
+   Cost:         ₹0 (FREE)
+
+3. GODADDY (Domain Registrar)
+   ─────────────────────────────────────
+   URL:          https://www.godaddy.com
+   Domain:       candycapturephotography.in
+   Purpose:      Domain name registration
+   Cost:         ~₹500-1000/year (Domain renewal)
+
+4. WEB3FORMS (Contact Form Service)
+   ─────────────────────────────────────
+   URL:          https://web3forms.com
+   Dashboard:    https://web3forms.com/dashboard
+   Login Email:  hellocandycapturephotography@gmail.com
+   Access Key:   2b3cd7f9-5495-41ba-9a59-99f9955bd0c4
+   Purpose:      Sends booking enquiry emails to you
+   Cost:         ₹0 (FREE - 250 submissions/month)
+
+================================================================================
+                           MONTHLY COST SUMMARY
+================================================================================
+
+Cloudflare Pages Hosting:     ₹0 (FREE)
+GitHub Code Storage:          ₹0 (FREE)
+SSL Certificate (HTTPS):      ₹0 (FREE - included in Cloudflare)
+Web3Forms (Email):            ₹0 (FREE)
+Domain Renewal (Yearly):      ~₹800/year
+
+TOTAL MONTHLY COST:           ₹0 (Zero)
+TOTAL YEARLY COST:            ~₹800 (Domain only)
+
+================================================================================
+                        HOW BOOKING FORM WORKS
+================================================================================
+
+1. Customer visits: candycapturephotography.in
+2. Customer clicks "Book Now" button
+3. Form appears asking: Name, Mobile, Event Type, Event Date
+4. Customer fills details and clicks "Submit Enquiry"
+5. Customer sees "Thank You" message
+6. YOU receive email at: hellocandycapturephotography@gmail.com
+
+Email contains:
+- Customer Name
+- Mobile Number
+- Event Type (Wedding, Maternity, Baby, etc.)
+- Event Date
+
+You then call/WhatsApp the customer to discuss!
+
+================================================================================
+                      HOW TO UPDATE WEBSITE
+================================================================================
+
+Website files are stored at: C:\kiro\website
+
+TO MAKE CHANGES:
+1. Edit files in C:\kiro\website\src\
+2. Open terminal/command prompt
+3. Run these commands:
+   
+   cd C:\kiro\website
+   npm run build
+   git add .
+   git commit -m "Your update description"
+   git push
+
+4. Wait 1-2 minutes - Cloudflare auto-deploys!
+
+================================================================================
+                        HOW TO ADD NEW PHOTOS
+================================================================================
+
+1. Add photos to: C:\kiro\website\public\images\[category]\
+   
+   Categories:
+   - wedding     (Wedding photos)
+   - baby        (Baby shoot photos)
+   - maternity   (Maternity photos)
+   - model       (Model photography)
+   - product     (Product photos)
+   - birthday    (Birthday event photos)
+
+2. If photo is larger than 5MB, compress it first
+
+3. Update the component file to reference new image
+
+4. Push to GitHub (see "How to Update Website" above)
+
+================================================================================
+                         IMPORTANT LINKS
+================================================================================
+
+Website:              https://candycapturephotography.in
+Cloudflare Dashboard: https://dash.cloudflare.com
+GitHub Repository:    https://github.com/candycapturephotography/candycapture-photography-website
+GoDaddy Domain:       https://dcc.godaddy.com
+Web3Forms Dashboard:  https://web3forms.com/dashboard
+
+================================================================================
+                     TECHNOLOGY USED (For Reference)
+================================================================================
+
+Frontend Framework:   React 18
+Build Tool:           Vite
+Language:             TypeScript
+Styling:              Tailwind CSS
+Animations:           Framer Motion
+Icons:                Lucide React
+Hosting:              Cloudflare Pages
+Form Handling:        Web3Forms API
+Version Control:      Git + GitHub
+
+================================================================================
+                          TROUBLESHOOTING
+================================================================================
+
+WEBSITE NOT LOADING?
+- Check if domain is active at GoDaddy
+- Check Cloudflare dashboard for errors
+- Try clearing browser cache (Ctrl+Shift+Delete)
+
+NOT RECEIVING BOOKING EMAILS?
+- Check spam/junk folder
+- Verify Web3Forms dashboard: https://web3forms.com/dashboard
+- Free plan limit: 250 emails/month
+
+NEED TO UPDATE WEBSITE?
+- Files are at: C:\kiro\website
+- Push changes to GitHub, Cloudflare auto-deploys
+
+================================================================================
+                              SUPPORT
+================================================================================
+
+Cloudflare Help:      https://support.cloudflare.com
+GitHub Help:          https://support.github.com
+GoDaddy Help:         https://www.godaddy.com/help
+Web3Forms Help:       https://web3forms.com/contact
+
+================================================================================
+              CREATED WITH KIRO AI - September 5, 2026
+================================================================================
