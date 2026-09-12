@@ -29,19 +29,19 @@ const portfolioItems = [
   {
     id: 3,
     category: 'Model',
-    image: '/images/model/Model-1.jpg',
+    image: '/images/model/model-01.jpg',
     title: 'Fashion Portrait',
   },
   {
     id: 4,
     category: 'Maternity',
-    image: '/images/maternity/Candy Capture 00.jpg',
+    image: '/images/maternity/maternity-01.jpg',
     title: 'Expecting Joy',
   },
   {
     id: 5,
     category: 'Baby',
-    image: '/images/baby/SIVA9559.JPG',
+    image: '/images/baby/baby-01.jpg',
     title: 'Little Wonder',
   },
   {
@@ -59,7 +59,7 @@ const portfolioItems = [
   {
     id: 8,
     category: 'Model',
-    image: '/images/model/Model-2.jpg',
+    image: '/images/model/model-05.jpg',
     title: 'Elegance',
   },
   {
@@ -77,7 +77,7 @@ const portfolioItems = [
   {
     id: 11,
     category: 'Birthday',
-    image: '/images/birthday/Birthday-1.JPG',
+    image: '/images/birthday/birthday-01.jpg',
     title: 'Celebrations',
   },
   {
@@ -89,7 +89,7 @@ const portfolioItems = [
   {
     id: 13,
     category: 'Model',
-    image: '/images/model/Model-3.jpg',
+    image: '/images/model/model-10.jpg',
     title: 'Style Portrait',
   },
   {
@@ -107,13 +107,13 @@ const portfolioItems = [
   {
     id: 16,
     category: 'Maternity',
-    image: '/images/maternity/CNY06710 Scan.jpg',
+    image: '/images/maternity/maternity-05.jpg',
     title: 'Graceful Wait',
   },
   {
     id: 17,
     category: 'Baby',
-    image: '/images/baby/SIVA9602.JPG',
+    image: '/images/baby/baby-05.jpg',
     title: 'Tiny Toes',
   },
   {

@@ -17,7 +17,7 @@ const galleryImages = [
   },
   {
     id: 3,
-    image: '/images/model/Model-1.jpg',
+    image: '/images/model/model-01.jpg',
     caption: 'Timeless elegance',
     location: 'Studio',
   },
@@ -29,7 +29,7 @@ const galleryImages = [
   },
   {
     id: 5,
-    image: '/images/maternity/Candy Capture 00.jpg',
+    image: '/images/maternity/maternity-01.jpg',
     caption: 'Beautiful beginnings',
     location: 'Sivakasi',
   },
@@ -41,7 +41,7 @@ const galleryImages = [
   },
   {
     id: 7,
-    image: '/images/baby/SIVA9559.JPG',
+    image: '/images/baby/baby-01.jpg',
     caption: 'Precious moments',
     location: 'Sivakasi',
   },
@@ -59,7 +59,7 @@ const galleryImages = [
   },
   {
     id: 10,
-    image: '/images/model/Model-2.jpg',
+    image: '/images/model/model-05.jpg',
     caption: 'Style and grace',
     location: 'Studio',
   },
