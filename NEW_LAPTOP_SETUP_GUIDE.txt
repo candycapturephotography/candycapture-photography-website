@@ -1,0 +1,248 @@
+================================================================================
+     CANDY CAPTURE PHOTOGRAPHY - NEW LAPTOP SETUP GUIDE
+================================================================================
+
+Follow these steps to manage your website from a new laptop.
+
+================================================================================
+                    STEP 1: INSTALL REQUIRED SOFTWARE
+================================================================================
+
+1. INSTALL NODE.JS
+   ─────────────────
+   - Go to: https://nodejs.org
+   - Download "LTS" version (green button)
+   - Run installer, click "Next" on all screens
+   - Restart laptop after installation
+
+2. INSTALL GIT
+   ─────────────────
+   - Go to: https://git-scm.com/download/win
+   - Download will start automatically
+   - Run installer, click "Next" on all screens (default settings OK)
+
+3. INSTALL VS CODE (Optional but recommended)
+   ─────────────────
+   - Go to: https://code.visualstudio.com
+   - Download and install
+
+   OR
+
+   INSTALL KIRO (AI-powered IDE)
+   ─────────────────
+   - Go to: https://kiro.dev
+   - Download and install
+
+================================================================================
+                    STEP 2: CREATE PROJECT FOLDER
+================================================================================
+
+1. Open File Explorer
+2. Go to C:\ drive
+3. Create a new folder called "kiro"
+   Path will be: C:\kiro
+
+================================================================================
+                    STEP 3: CLONE YOUR WEBSITE FROM GITHUB
+================================================================================
+
+1. Open "Command Prompt" or "PowerShell"
+   (Press Windows key, type "cmd", press Enter)
+
+2. Type these commands one by one:
+
+   cd C:\kiro
+   
+   git clone https://github.com/candycapturephotography/candycapture-photography-website.git website
+
+3. Wait for download to complete (may take 1-2 minutes)
+
+================================================================================
+                    STEP 4: INSTALL PROJECT DEPENDENCIES
+================================================================================
+
+1. In the same Command Prompt, type:
+
+   cd C:\kiro\website
+   
+   npm install
+
+2. Wait for installation (may take 2-3 minutes)
+
+================================================================================
+                    STEP 5: TEST THE WEBSITE LOCALLY
+================================================================================
+
+1. In Command Prompt, type:
+
+   npm run dev
+
+2. Open your browser and go to:
+   
+   http://localhost:3000
+
+3. You should see your Candy Capture Photography website!
+
+4. Press Ctrl+C in Command Prompt to stop the server
+
+================================================================================
+                    STEP 6: CONFIGURE GIT (First time only)
+================================================================================
+
+1. In Command Prompt, type these commands:
+
+   git config --global user.name "candycapturephotography"
+   git config --global user.email "hellocandycapturephotography@gmail.com"
+
+================================================================================
+                    HOW TO MAKE CHANGES AND DEPLOY
+================================================================================
+
+EDITING FILES:
+─────────────────
+1. Open VS Code or Kiro
+2. Click File → Open Folder → Select C:\kiro\website
+3. Edit any files you need
+
+ADDING NEW PHOTOS:
+─────────────────
+1. Add photos to: C:\kiro\website\public\images\[category]\
+   Categories: wedding, prewedding, maternity, baby, model, product, birthday
+
+2. If photos are large (>5MB), compress them:
+   - Go to https://squoosh.app
+   - Upload photo, reduce quality to 80%
+   - Download compressed version
+
+3. Name files simply: category-01.jpg, category-02.jpg, etc.
+
+DEPLOYING TO LIVE WEBSITE:
+─────────────────
+1. Open Command Prompt
+2. Type these commands:
+
+   cd C:\kiro\website
+   npm run build
+   git add .
+   git commit -m "Your update description"
+   git push
+
+3. Enter GitHub username and password if asked:
+   Username: candycapturephotography
+   Password: (your GitHub password or personal access token)
+
+4. Wait 1-2 minutes - Cloudflare auto-deploys!
+
+5. Check: https://candycapturephotography.in
+
+================================================================================
+                    GITHUB AUTHENTICATION (If needed)
+================================================================================
+
+If git push asks for password and fails, you need a Personal Access Token:
+
+1. Go to: https://github.com/settings/tokens
+2. Click "Generate new token (classic)"
+3. Give it a name: "New Laptop"
+4. Select scopes: check "repo" (full control)
+5. Click "Generate token"
+6. COPY THE TOKEN IMMEDIATELY (you won't see it again!)
+7. Use this token as password when git push asks
+
+================================================================================
+                    QUICK REFERENCE COMMANDS
+================================================================================
+
+START LOCAL SERVER:
+   cd C:\kiro\website
+   npm run dev
+
+BUILD WEBSITE:
+   npm run build
+
+PUSH TO LIVE:
+   git add .
+   git commit -m "Update message"
+   git push
+
+PULL LATEST CHANGES (if edited from another laptop):
+   git pull
+
+CHECK STATUS:
+   git status
+
+================================================================================
+                    FOLDER STRUCTURE
+================================================================================
+
+C:\kiro\website\
+├── public\
+│   └── images\
+│       ├── baby\         → Baby photos (17 files)
+│       ├── birthday\     → Birthday photos (13 files)
+│       ├── maternity\    → Maternity photos (10 files)
+│       ├── model\        → Model photos (28 files)
+│       ├── prewedding\   → Pre-wedding photos (46 files)
+│       ├── product\      → Product photos (7 files)
+│       └── wedding\      → Wedding photos (4 files)
+├── src\
+│   └── components\       → Website code files
+├── package.json          → Project configuration
+└── README.md
+
+================================================================================
+                    IMPORTANT ACCOUNTS
+================================================================================
+
+GITHUB (Code Storage)
+   URL: https://github.com
+   Username: candycapturephotography
+   Repo: https://github.com/candycapturephotography/candycapture-photography-website
+
+CLOUDFLARE (Website Hosting)
+   URL: https://dash.cloudflare.com
+   Email: hellocandycapturephotography@gmail.com
+
+GODADDY (Domain)
+   URL: https://www.godaddy.com
+   Domain: candycapturephotography.in
+
+WEB3FORMS (Contact Form)
+   URL: https://web3forms.com
+   Email: hellocandycapturephotography@gmail.com
+
+================================================================================
+                    TROUBLESHOOTING
+================================================================================
+
+ERROR: "npm is not recognized"
+   → Node.js not installed. Install from https://nodejs.org
+
+ERROR: "git is not recognized"
+   → Git not installed. Install from https://git-scm.com
+
+ERROR: "npm install fails"
+   → Delete node_modules folder and try again
+   → Run: Remove-Item -Recurse node_modules
+   → Then: npm install
+
+ERROR: "git push fails - authentication"
+   → Create Personal Access Token (see section above)
+   → Use token as password
+
+ERROR: "Port 3000 already in use"
+   → Another app using port. Close it or use different port:
+   → npm run dev -- --port 3001
+
+================================================================================
+                    NEED HELP?
+================================================================================
+
+1. Read this guide again carefully
+2. Check error messages and troubleshooting section
+3. Google the error message
+4. Open Kiro IDE and ask for help!
+
+================================================================================
+              Created: September 5, 2026 | Candy Capture Photography
+================================================================================
