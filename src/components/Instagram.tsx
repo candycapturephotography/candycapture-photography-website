@@ -24,11 +24,11 @@ const InstagramIcon = ({ size = 24, className = '' }: { size?: number; className
 
 const instagramPosts = [
   { id: 1, image: '/images/wedding/Wedding-1.jpeg' },
-  { id: 2, image: '/images/maternity/Candy Capture 00.jpg' },
-  { id: 3, image: '/images/model/Model-1.jpg' },
-  { id: 4, image: '/images/baby/SIVA9559.JPG' },
+  { id: 2, image: '/images/maternity/maternity-01.jpg' },
+  { id: 3, image: '/images/model/model-01.jpg' },
+  { id: 4, image: '/images/baby/baby-01.jpg' },
   { id: 5, image: '/images/product/Crackling Coco.jpg' },
-  { id: 6, image: '/images/birthday/Birthday-1.JPG' },
+  { id: 6, image: '/images/birthday/birthday-01.jpg' },
 ]
 
 export default function Instagram() {

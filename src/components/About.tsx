@@ -21,7 +21,7 @@ export default function About() {
               {/* Main Image */}
               <div className="relative z-10 overflow-hidden">
                 <img
-                  src="/images/model/Model-1.jpg"
+                  src="/images/model/model-01.jpg"
                   alt="Professional photography session by Candy Capture"
                   className="w-full aspect-[4/5] object-cover"
                 />

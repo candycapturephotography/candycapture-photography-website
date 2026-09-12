@@ -14,7 +14,7 @@ export default function BookingCTA() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/images/model/Model-3.jpg"
+          src="/images/model/model-03.jpg"
           alt="Beautiful photography backdrop"
           className="w-full h-full object-cover"
         />
