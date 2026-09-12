@@ -33,7 +33,7 @@ export default function BookingCTA() {
             {/* Decorative Element */}
             <div className="flex items-center justify-center gap-3 mb-6">
               <div className="w-12 h-px bg-candy-pink" />
-              <span className="text-candy-pink font-script text-xl md:text-2xl">Let's Create</span>
+              <span className="text-candy-pink font-candy text-lg md:text-xl">Let's Create</span>
               <div className="w-12 h-px bg-candy-pink" />
             </div>
 

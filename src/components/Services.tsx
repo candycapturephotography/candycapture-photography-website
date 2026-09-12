@@ -162,7 +162,7 @@ export default function Services() {
             transition={{ duration: 0.8 }}
             className="text-center max-w-xl mx-auto mb-10 md:mb-12"
           >
-            <span className="inline-block text-candy-pink font-script text-xl md:text-2xl mb-2">
+            <span className="inline-block text-candy-pink font-candy text-xl md:text-2xl mb-2">
               What We Offer
             </span>
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-semibold text-neutral-900 mb-4">

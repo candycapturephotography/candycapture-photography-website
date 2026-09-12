@@ -1,9 +1,30 @@
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
+import { useState, useEffect } from 'react'
 import { useBooking } from '../context/BookingContext'
+
+const heroImages = [
+  '/images/wedding/Wedding-1.jpeg',
+  '/images/wedding/wedding-05.jpg',
+  '/images/prewedding/prewedding-01.jpg',
+  '/images/model/model-01.jpg',
+  '/images/wedding/wedding-12.jpg',
+  '/images/maternity/maternity-01.jpg',
+  '/images/prewedding/prewedding-15.jpg',
+  '/images/wedding/wedding-20.jpg',
+  '/images/wedding/Wedding-2.jpeg',
+]
 
 export default function Hero() {
   const { openBooking } = useBooking()
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % heroImages.length)
+    }, 4500)
+    return () => clearInterval(interval)
+  }, [])
 
   const scrollToAbout = () => {
     const element = document.querySelector('#about')
@@ -14,18 +35,25 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative h-screen min-h-[600px] max-h-[900px] overflow-hidden">
-      {/* Background Image */}
+      {/* Background Slideshow */}
       <div className="absolute inset-0">
-        <img
-          src="/images/wedding/Wedding-1.jpeg"
-          alt="Beautiful wedding photography by Candy Capture Photography"
-          className="w-full h-full object-cover"
-        />
+        <AnimatePresence>
+          <motion.img
+            key={current}
+            src={heroImages[current]}
+            alt="Beautiful photography by Candy Capture Photography"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5, ease: 'easeInOut' }}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 pt-20 md:pt-24">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -36,7 +64,7 @@ export default function Hero() {
           <img
             src="/logo.png"
             alt="Candy Capture Photography"
-            className="h-32 sm:h-40 md:h-52 lg:h-64 w-auto mx-auto drop-shadow-2xl"
+            className="h-48 sm:h-64 md:h-80 lg:h-96 w-auto mx-auto drop-shadow-2xl"
           />
         </motion.div>
 
@@ -47,10 +75,10 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="max-w-2xl"
         >
-          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-white mb-4 leading-tight">
+          <h1 className="font-display text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-medium text-white mb-4 leading-tight">
             Capturing Moments.
             <br />
-            <span className="font-script text-candy-pink text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Creating Memories.</span>
+            <span className="font-script text-candy-pink text-2xl sm:text-3xl md:text-3xl lg:text-4xl">Creating Memories.</span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-white/80 font-light max-w-lg mx-auto mb-8 px-2">
             Based in Sivakasi, Tamil Nadu — capturing the moments that matter most with creative composition and cinematic visuals.

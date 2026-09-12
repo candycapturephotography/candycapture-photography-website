@@ -37,6 +37,7 @@ export default {
         display: ['Playfair Display', 'serif'],
         body: ['Inter', 'sans-serif'],
         script: ['Dancing Script', 'cursive'],
+        candy: ['Pacifico', 'cursive'],
       },
       fontSize: {
         'display-xl': ['5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],

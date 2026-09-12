@@ -206,6 +206,7 @@ git push
 
 | Date | Commit | Change |
 |------|--------|--------|
+| September 12, 2026 | (pending) | Hero redesign + more photos: replaced logo video with larger static logo (h-48 to h-96); reduced tagline size so logo stands out; hero background is now an auto cross-fading slideshow (9 photos, 4.5s each). Added Pacifico ('font-candy') script style to all 7 section labels (Our Story, What We Offer, Our Work, The Candy Capture Difference, Visual Stories, Client Love, Let's Create). Compressed 69 raw wedding photos from 512 MB down to ~14.5 MB (max 1920px, JPEG q82) and normalized to wedding-NN.jpg. Expanded Featured Gallery to 23 photos including new wedding shots. |
 | September 12, 2026 | bc2eceb | Fixed broken image paths in About.tsx, BookingCTA.tsx, and Instagram.tsx. Old filenames (Model-1.jpg, Model-3.jpg, SIVA9559.JPG, Candy Capture 00.jpg, Birthday-1.JPG) updated to normalized scheme (model-01.jpg, model-03.jpg, baby-01.jpg, maternity-01.jpg, birthday-01.jpg). Root cause: case-sensitive Cloudflare/Linux server could not resolve old mixed-case names, causing 404 broken images on About (Our Story), Instagram (Follow Our Journey grid), and contact backdrop. Verified locally (build passed, all 26 image refs resolve) and deployed to main. |
 
 ---

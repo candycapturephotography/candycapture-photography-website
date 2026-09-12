@@ -49,7 +49,7 @@ export default function About() {
             className="order-1 lg:order-2"
           >
             {/* Section Label */}
-            <span className="inline-block text-candy-pink font-script text-xl md:text-2xl mb-3">
+            <span className="inline-block text-candy-pink font-candy text-xl md:text-2xl mb-3">
               Our Story
             </span>
 

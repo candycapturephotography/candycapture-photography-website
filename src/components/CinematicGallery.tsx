@@ -3,78 +3,29 @@ import { useInView } from 'framer-motion'
 import { useRef, useEffect, useState } from 'react'
 
 const galleryImages = [
-  {
-    id: 1,
-    image: '/images/wedding/Wedding-1.jpeg',
-    caption: 'A moment of pure joy',
-    location: 'Sivakasi',
-  },
-  {
-    id: 2,
-    image: '/images/prewedding/prewedding-01.jpg',
-    caption: 'Love before the vows',
-    location: 'Tamil Nadu',
-  },
-  {
-    id: 3,
-    image: '/images/model/model-01.jpg',
-    caption: 'Timeless elegance',
-    location: 'Studio',
-  },
-  {
-    id: 4,
-    image: '/images/prewedding/prewedding-15.jpg',
-    caption: 'Together forever',
-    location: 'Sivakasi',
-  },
-  {
-    id: 5,
-    image: '/images/maternity/maternity-01.jpg',
-    caption: 'Beautiful beginnings',
-    location: 'Sivakasi',
-  },
-  {
-    id: 6,
-    image: '/images/prewedding/prewedding-32.jpg',
-    caption: 'Golden hour love',
-    location: 'Tamil Nadu',
-  },
-  {
-    id: 7,
-    image: '/images/baby/baby-01.jpg',
-    caption: 'Precious moments',
-    location: 'Sivakasi',
-  },
-  {
-    id: 8,
-    image: '/images/prewedding/prewedding-43.jpg',
-    caption: 'Soulmates',
-    location: 'Sivakasi',
-  },
-  {
-    id: 9,
-    image: '/images/wedding/Wedding-2.jpeg',
-    caption: 'Love in every frame',
-    location: 'Tamil Nadu',
-  },
-  {
-    id: 10,
-    image: '/images/model/model-05.jpg',
-    caption: 'Style and grace',
-    location: 'Studio',
-  },
-  {
-    id: 11,
-    image: '/images/prewedding/prewedding-36.jpg',
-    caption: 'Perfect pair',
-    location: 'Tamil Nadu',
-  },
-  {
-    id: 12,
-    image: '/images/product/Crackling Coco.jpg',
-    caption: 'Product perfection',
-    location: 'Studio',
-  },
+  { id: 1, image: '/images/wedding/Wedding-1.jpeg', caption: 'A moment of pure joy', location: 'Sivakasi' },
+  { id: 2, image: '/images/prewedding/prewedding-02.jpg', caption: 'Love before the vows', location: 'Tamil Nadu' },
+  { id: 3, image: '/images/model/model-02.jpg', caption: 'Timeless elegance', location: 'Studio' },
+  { id: 4, image: '/images/prewedding/prewedding-05.jpg', caption: 'Together forever', location: 'Sivakasi' },
+  { id: 5, image: '/images/maternity/maternity-02.jpg', caption: 'Beautiful beginnings', location: 'Sivakasi' },
+  { id: 6, image: '/images/prewedding/prewedding-10.jpg', caption: 'Golden hour love', location: 'Tamil Nadu' },
+  { id: 7, image: '/images/baby/baby-02.jpg', caption: 'Precious little one', location: 'Sivakasi' },
+  { id: 8, image: '/images/birthday/birthday-02.jpg', caption: 'Joyful celebration', location: 'Sivakasi' },
+  { id: 9, image: '/images/wedding/Wedding-2.jpeg', caption: 'Love in every frame', location: 'Tamil Nadu' },
+  { id: 10, image: '/images/model/model-08.jpg', caption: 'Style and grace', location: 'Studio' },
+  { id: 11, image: '/images/prewedding/prewedding-20.jpg', caption: 'Perfect pair', location: 'Tamil Nadu' },
+  { id: 12, image: '/images/baby/baby-08.jpg', caption: 'Tiny wonder', location: 'Sivakasi' },
+  { id: 13, image: '/images/maternity/maternity-05.jpg', caption: 'The wait begins', location: 'Sivakasi' },
+  { id: 14, image: '/images/birthday/birthday-05.jpg', caption: 'Happy moments', location: 'Tamil Nadu' },
+  { id: 15, image: '/images/model/model-15.jpg', caption: 'Fashion portrait', location: 'Studio' },
+  { id: 16, image: '/images/prewedding/prewedding-30.jpg', caption: 'Romance in frames', location: 'Sivakasi' },
+  { id: 17, image: '/images/product/Crackling Coco.jpg', caption: 'Product perfection', location: 'Studio' },
+  { id: 18, image: '/images/wedding/wedding-05.jpg', caption: 'Wedding day magic', location: 'Sivakasi' },
+  { id: 19, image: '/images/wedding/wedding-12.jpg', caption: 'Sacred vows', location: 'Tamil Nadu' },
+  { id: 20, image: '/images/wedding/wedding-25.jpg', caption: 'Forever begins', location: 'Sivakasi' },
+  { id: 21, image: '/images/wedding/wedding-33.jpg', caption: 'Celebration of love', location: 'Tamil Nadu' },
+  { id: 22, image: '/images/wedding/wedding-40.jpg', caption: 'Cherished moments', location: 'Sivakasi' },
+  { id: 23, image: '/images/wedding/wedding-50.jpg', caption: 'A beautiful union', location: 'Tamil Nadu' },
 ]
 
 export default function CinematicGallery() {
@@ -110,7 +61,7 @@ export default function CinematicGallery() {
           transition={{ duration: 0.8 }}
           className="text-center max-w-xl mx-auto"
         >
-          <span className="inline-block text-candy-pink font-script text-xl md:text-2xl mb-2">
+          <span className="inline-block text-candy-pink font-candy text-xl md:text-2xl mb-2">
             Visual Stories
           </span>
           <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-4">
