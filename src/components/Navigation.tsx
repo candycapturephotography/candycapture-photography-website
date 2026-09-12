@@ -67,7 +67,7 @@ export default function Navigation() {
               <img
                 src="/logo.png"
                 alt="Candy Capture Photography"
-                className="h-10 md:h-12 w-auto"
+                className="h-16 md:h-20 lg:h-24 w-auto"
               />
             </a>
 

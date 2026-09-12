@@ -36,7 +36,7 @@ export default function Hero() {
           <img
             src="/logo.png"
             alt="Candy Capture Photography"
-            className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto mx-auto drop-shadow-2xl"
+            className="h-32 sm:h-40 md:h-52 lg:h-64 w-auto mx-auto drop-shadow-2xl"
           />
         </motion.div>
 
