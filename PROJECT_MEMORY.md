@@ -202,6 +202,14 @@ git push
 
 ---
 
+## Change Log
+
+| Date | Commit | Change |
+|------|--------|--------|
+| September 12, 2026 | bc2eceb | Fixed broken image paths in About.tsx, BookingCTA.tsx, and Instagram.tsx. Old filenames (Model-1.jpg, Model-3.jpg, SIVA9559.JPG, Candy Capture 00.jpg, Birthday-1.JPG) updated to normalized scheme (model-01.jpg, model-03.jpg, baby-01.jpg, maternity-01.jpg, birthday-01.jpg). Root cause: case-sensitive Cloudflare/Linux server could not resolve old mixed-case names, causing 404 broken images on About (Our Story), Instagram (Follow Our Journey grid), and contact backdrop. Verified locally (build passed, all 26 image refs resolve) and deployed to main. |
+
+---
+
 ## 📝 Project Timeline
 
 | Date | Milestone |
