@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import ServiceGalleryModal from './ServiceGalleryModal'
@@ -32,7 +32,35 @@ const services = [
     description: 'Celebrating the beautiful anticipation of new life.',
     image: '/images/maternity/maternity-01.jpg',
     folder: 'maternity',
-    images: Array.from({ length: 10 }, (_, i) => `/images/maternity/maternity-${(i + 1).toString().padStart(2, '0')}.jpg`),
+    images: [
+      '/images/maternity/maternity-01.jpg',
+      '/images/maternity/maternity-02.jpg',
+      '/images/maternity/maternity-03.jpg',
+      '/images/maternity/maternity-04.jpg',
+      '/images/maternity/maternity-05.jpg',
+      '/images/maternity/maternity-06.jpg',
+      '/images/maternity/maternity-07.jpg',
+      '/images/maternity/maternity-08.jpg',
+      '/images/maternity/maternity-09.jpg',
+      '/images/maternity/maternity-10.jpg',
+      '/images/maternity/CNY01437.JPG.jpeg',
+      '/images/maternity/CNY01449.JPG.jpeg',
+      '/images/maternity/CNY01489 CC.jpg.jpeg',
+      '/images/maternity/CNY04744.jpg.jpeg',
+      '/images/maternity/CNY05490 CC.jpg.jpeg',
+      '/images/maternity/CNY05492 CC.jpg.jpeg',
+      '/images/maternity/CNY05497 CC.jpg.jpeg',
+      '/images/maternity/CNY05504 CAndy cc.jpg.jpeg',
+      '/images/maternity/CNY05524.jpg CC.jpg.jpeg',
+      '/images/maternity/CNY05528.jpg CC.jpg.jpeg',
+      '/images/maternity/CNY05550.jpg CC.jpg.jpeg',
+      '/images/maternity/CNY07671 Wlcm.jpg.jpeg',
+      '/images/maternity/CNY07678 Happiness Is On The Way.jpg.jpeg',
+      '/images/maternity/Motherhood.jpg.jpeg',
+      '/images/maternity/Neeyum Naanum Anbe.jpg.jpeg',
+      '/images/maternity/Thaimai Candy.jpg.jpeg',
+      '/images/maternity/Tharame Candy.jpg.jpeg',
+    ],
   },
   {
     id: 4,
