@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
@@ -37,7 +37,7 @@ export default function OurWorkVideo() {
         >
           <div className="relative aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
             <video
-              src="/images/TopVideo/Praveen-Sneha.mp4"
+              src="/images/TopVideo/PSneha.mp4"
               controls
               autoPlay
               muted
@@ -58,7 +58,7 @@ export default function OurWorkVideo() {
             className="text-center mt-6"
           >
             <h3 className="font-display text-lg md:text-xl text-white mb-1">
-              Praveen & Sneha
+              P & Sneha
             </h3>
             <p className="text-neutral-500 text-sm">
               A beautiful love story captured in frames
