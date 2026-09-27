@@ -1,8 +1,10 @@
-import { BookingProvider, useBooking } from './context/BookingContext'
+﻿import { BookingProvider, useBooking } from './context/BookingContext'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
+import TopPicsSlider from './components/TopPicsSlider'
 import About from './components/About'
 import Services from './components/Services'
+import OurWorkVideo from './components/OurWorkVideo'
 import Portfolio from './components/Portfolio'
 import WhyChooseUs from './components/WhyChooseUs'
 import CinematicGallery from './components/CinematicGallery'
@@ -20,8 +22,10 @@ function AppContent() {
       <Navigation />
       <main>
         <Hero />
+        <TopPicsSlider />
         <About />
         <Services />
+        <OurWorkVideo />
         <Portfolio />
         <WhyChooseUs />
         <CinematicGallery />
