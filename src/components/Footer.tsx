@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Heart } from 'lucide-react'
+﻿import { Phone, Mail, MapPin, Heart } from 'lucide-react'
 
 // Instagram SVG icon component
 const InstagramIcon = ({ size = 24, className = '' }: { size?: number; className?: string }) => (
@@ -180,6 +180,16 @@ export default function Footer() {
             </p>
             <p className="text-neutral-500 text-xs flex items-center gap-1">
               Made with <Heart size={12} className="text-candy-pink fill-candy-pink" /> in Sivakasi
+              <span className="text-neutral-700 mx-1">|</span>
+              Designed &amp; Developed by{" "}
+              <a
+                href="https://sastikatech.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-candy-pink hover:text-white transition-colors duration-300 ml-1"
+              >
+                Sastika Technologies
+              </a>
             </p>
           </div>
         </div>
