@@ -13,6 +13,9 @@ const heroImages = [
   '/images/prewedding/prewedding-15.jpg',
   '/images/wedding/wedding-20.jpg',
   '/images/wedding/Wedding-2.jpeg',
+  '/images/model/CNY05940.jpg CC.jpg',
+  '/images/model/CNY05957.jpg CC.jpg',
+  '/images/model/CNY05968.jpg CC.jpg',
 ]
 
 export default function Hero() {
