@@ -4,15 +4,16 @@ import { useState, useEffect } from 'react'
 import { useBooking } from '../context/BookingContext'
 
 const heroImages = [
-  '/images/wedding/Wedding-1.jpeg',
-  '/images/wedding/wedding-05.jpg',
-  '/images/prewedding/prewedding-01.jpg',
-  '/images/model/model-01.jpg',
-  '/images/wedding/wedding-12.jpg',
-  '/images/maternity/maternity-01.jpg',
-  '/images/prewedding/prewedding-15.jpg',
-  '/images/wedding/wedding-20.jpg',
-  '/images/wedding/Wedding-2.jpeg',
+  '/images/model/CNY05880.jpg CC.jpg',
+  '/images/model/CNY05902.jpg CC.jpg',
+  '/images/model/CNY05923.jpg CC.jpg',
+  '/images/model/CNY05940.jpg CC.jpg',
+  '/images/model/CNY05957.jpg CC.jpg',
+  '/images/model/CNY05968.jpg CC.jpg',
+  '/images/model/CNY05952.jpg CC.jpg',
+  '/images/model/CNY05936.jpg CC.jpg',
+  '/images/model/CNY05927.jpg CC.jpg',
+  '/images/model/CNY05911.jpg CC.jpg',
 ]
 
 export default function Hero() {
