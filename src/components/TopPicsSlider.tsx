@@ -4,9 +4,9 @@ import { useRef, useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const topPicsImages = [
-  { id: 1, image: '/images/Toppics/CNY05281 CC.jpg.jpeg', title: 'Beautiful Moment' },
-  { id: 2, image: '/images/Toppics/CNY05453.jpg CC.jpg.jpeg', title: 'Captured Joy' },
-  { id: 3, image: '/images/Toppics/CNY05599.jpg CC.jpg.jpeg', title: 'Timeless Beauty' },
+  { id: 1, image: '/images/model/CNY05940.jpg', title: 'Beautiful Moment' },
+  { id: 2, image: '/images/model/CNY05957.jpg', title: 'Captured Joy' },
+  { id: 3, image: '/images/model/CNY05968.jpg', title: 'Timeless Beauty' },
 ]
 
 export default function TopPicsSlider() {
