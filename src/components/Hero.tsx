@@ -14,6 +14,10 @@ const heroImages = [
   '/images/model/CNY05936.jpg CC.jpg',
   '/images/model/CNY05927.jpg CC.jpg',
   '/images/model/CNY05911.jpg CC.jpg',
+  '/images/model/CNY05893.jpg CC.jpg',
+  '/images/model/CNY05919.jpg CC.jpg',
+  '/images/model/CNY05950.jpg CC.jpg',
+  '/images/model/CNY05965.jpg CC.jpg',
 ]
 
 export default function Hero() {

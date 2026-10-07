@@ -7,6 +7,9 @@ const topPicsImages = [
   { id: 1, image: '/images/model/CNY05940.jpg CC.jpg', title: 'Beautiful Moment' },
   { id: 2, image: '/images/model/CNY05957.jpg CC.jpg', title: 'Captured Joy' },
   { id: 3, image: '/images/model/CNY05968.jpg CC.jpg', title: 'Timeless Beauty' },
+  { id: 4, image: '/images/Toppics/CNY05909.jpg CC.jpg', title: 'Elegant Shot' },
+  { id: 5, image: '/images/Toppics/CNY05950.jpg CC.jpg', title: 'Radiant Glow' },
+  { id: 6, image: '/images/Toppics/CNY05968.jpg CC.jpg', title: 'Stunning Portrait' },
 ]
 
 export default function TopPicsSlider() {
